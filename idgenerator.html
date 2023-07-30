@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="id.css">
+    <title>ID Card</title>
+
+</head>
+<body>
+    <section>
+        <form>
+            <input type="text" id="name" onkeyup="getvalues('name')" placeholder="Full Name"><br><br>
+            <input type="number" min="1" max="100" id="ID NO" onkeyup="getvalues('ID NO')" placeholder="ID NO"><br><br>
+            <input type="email" id="email" onkeyup="getvalues('email')" placeholder="Email"><br><br>
+            <input type="tel" id="tel" min="1" max="10" onkeyup="getvalues('tel')" placeholder="Phone No"><br><br>
+            <input type="file" id="myfile" name="myfile"><br><br>
+        </form>
+        <div class="box-2" id="printMe">
+            <div class="box">
+                <div id="box1">
+                    <div class="img">
+                        <h2 class="logo">Technologent<span style="color: #57d779"></span></h2>
+                        <img src="#" id="show-image">
+                        <div class="name-box">
+                            <h2 class="p1" id="name-view"></h2>
+                            <p class="p2">Web Developer</p>
+                        </div>
+                    </div>
+                    <div class="p-box">
+                        <!-- <span> ID NO:<p id="ID NO-view"></p></span> -->
+                        <p>ID NO : <span id="ID NO-view"></span></p>
+                        <p>E-mail : <span id="email-view"></span></p>
+                        <p>Phone No : <span id="tel-view"></span></p>
+                        <p><span id="ID NO-view"></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-box">
+                    <div class="footer-box1"></div>
+                </div>
+            </footer>
+        </div>
+    </section>
+    <script type="text/javascript" src="id.js">    </script>
+</body>
+</html>
